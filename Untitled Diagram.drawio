@@ -1,4 +1,4 @@
-<mxfile modified="2020-09-30T20:22:16.358Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="98MBpFE8nuxrEzRP5WsR" version="13.7.7" type="github">
+<mxfile modified="2020-09-30T20:43:15.180Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="d9A0O5PyD2ROtzF2Jnws" version="13.7.7" type="github">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Solution-1">
     <mxGraphModel dx="782" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -136,8 +136,8 @@
             <mxPoint x="890" y="510" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VLLBcXMZJe62vzT6Zpj2-55" value="Octopus deployment server communicates to the tentacles and deploys the changes" style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="888" y="570" width="278" height="50" as="geometry" />
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-55" value="Octopus deployment server communicates to the tentacles and deploys the changes when triggered" style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="888" y="570" width="278" height="60" as="geometry" />
         </mxCell>
         <mxCell id="VLLBcXMZJe62vzT6Zpj2-56" value="ASP.NET&lt;br&gt;app" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="764.5" y="645" width="55.5" height="30" as="geometry" />
@@ -151,16 +151,16 @@
         <mxCell id="VLLBcXMZJe62vzT6Zpj2-59" value="ASP.NET&lt;br&gt;app" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="770.5" y="975" width="55.5" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="VLLBcXMZJe62vzT6Zpj2-60" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.auto_scaling2;" vertex="1" parent="1">
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-60" value="ASG with EC2&#39;s" style="outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.auto_scaling2;" vertex="1" parent="1">
           <mxGeometry x="598.5" y="700" width="78" height="78" as="geometry" />
         </mxCell>
-        <mxCell id="VLLBcXMZJe62vzT6Zpj2-61" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D05C17;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.auto_scaling2;" vertex="1" parent="1">
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-61" value="ASG with no EC2&#39;s" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D05C17;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.auto_scaling2;" vertex="1" parent="1">
           <mxGeometry x="598.5" y="882" width="78" height="78" as="geometry" />
         </mxCell>
-        <mxCell id="VLLBcXMZJe62vzT6Zpj2-62" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.elastic_load_balancing;" vertex="1" parent="1">
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-62" value="Active loadbalancer" style="outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.elastic_load_balancing;" vertex="1" parent="1">
           <mxGeometry x="470" y="700" width="78" height="78" as="geometry" />
         </mxCell>
-        <mxCell id="VLLBcXMZJe62vzT6Zpj2-63" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.elastic_load_balancing;" vertex="1" parent="1">
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-63" value="Inactive loadbalancer" style="outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.elastic_load_balancing;" vertex="1" parent="1">
           <mxGeometry x="475.5" y="882" width="78" height="78" as="geometry" />
         </mxCell>
         <mxCell id="VLLBcXMZJe62vzT6Zpj2-64" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;elbow=vertical;startArrow=none;endFill=1;strokeColor=#545B64;rounded=0;" edge="1" parent="1" source="VLLBcXMZJe62vzT6Zpj2-62" target="VLLBcXMZJe62vzT6Zpj2-60">
@@ -199,6 +199,51 @@
               <mxPoint x="746" y="998" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-70" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;elbow=vertical;startArrow=none;endFill=1;strokeColor=#545B64;rounded=0;" edge="1" parent="1" source="VLLBcXMZJe62vzT6Zpj2-63" target="VLLBcXMZJe62vzT6Zpj2-61">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="558" y="749" as="sourcePoint" />
+            <mxPoint x="608.5" y="749" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-72" value="Route53" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="30" y="620" width="420" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-73" value="application route53 record" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="640" width="380" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-74" value="weighted (100%) route53 record points tot the ELB record" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="723" width="330" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-75" value="weighted (0%) route53 record points to the ELB record&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="88.75" y="908.5" width="302.5" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-76" value="" style="endArrow=classic;html=1;strokeColor=#000000;" edge="1" parent="1" source="VLLBcXMZJe62vzT6Zpj2-73" target="VLLBcXMZJe62vzT6Zpj2-74">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="850" as="sourcePoint" />
+            <mxPoint x="220" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-77" value="" style="endArrow=classic;html=1;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="VLLBcXMZJe62vzT6Zpj2-75">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="660" as="sourcePoint" />
+            <mxPoint x="220" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-78" value="" style="endArrow=classic;html=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="VLLBcXMZJe62vzT6Zpj2-74" target="VLLBcXMZJe62vzT6Zpj2-62">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="850" as="sourcePoint" />
+            <mxPoint x="220" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-79" value="" style="endArrow=classic;html=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="VLLBcXMZJe62vzT6Zpj2-75" target="VLLBcXMZJe62vzT6Zpj2-63">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="850" as="sourcePoint" />
+            <mxPoint x="220" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-80" value="Route53 holds the weighted records for both the load balancers. Load balancers here are to provide reverse proxy. Once the deployment happens the ASG for the old version can be reduced in the count for EC2&#39;s and those EC2&#39;s are untouched.&lt;br&gt;&amp;nbsp;&lt;br&gt;The inactive ASG can be made active with EC2&#39;s having latest artefacts deployed, route53 weight for the second load balancer can be slowly increased as the ASG&#39;s bring in new healthy nodes.&lt;br&gt;ELB health checks or route53 health checks can be utilized to determine the health of the new nodes, and making the weight for the second record to a 100 percent which completes the deployment.&lt;br&gt;&lt;br&gt;In the target state the current active ASG will become inactive and vice versa.&lt;br&gt;" style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="328" y="338" width="442" height="262" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
