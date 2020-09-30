@@ -1,4 +1,4 @@
-<mxfile modified="2020-09-30T21:08:00.641Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="NW2FcnK1bgch0xNaI08J" version="13.7.7" type="github" pages="2">
+<mxfile modified="2020-09-30T21:16:34.483Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="t6Kw4scI4qi3cWvUldO7" version="13.7.7" type="github" pages="2">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Solution-1">
     <mxGraphModel dx="782" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -255,10 +255,13 @@
     </mxGraphModel>
   </diagram>
   <diagram id="o0zNAadzB0BZ8VcfFKXI" name="Solution-2">
-    <mxGraphModel dx="782" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1609" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WI4aho6z8Xlh3h6VnirR-0" />
         <mxCell id="WI4aho6z8Xlh3h6VnirR-1" parent="WI4aho6z8Xlh3h6VnirR-0" />
+        <mxCell id="3R_JWn4JY1JE9I3gfPVz-0" value="PROPOSED NEW CAPABILITY" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WI4aho6z8Xlh3h6VnirR-1">
+          <mxGeometry x="-10" y="580" width="1440" height="1100" as="geometry" />
+        </mxCell>
         <mxCell id="6uLMOf0LNQOtZFtZwsxx-2" value="DATA LAYER" style="whiteSpace=wrap;html=1;aspect=fixed;align=center;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;fontStyle=1" vertex="1" parent="WI4aho6z8Xlh3h6VnirR-1">
           <mxGeometry x="910" y="1200" width="460" height="460" as="geometry" />
         </mxCell>
@@ -395,7 +398,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="O7zRid36dls9oC1l155X-33" value="Octopus deployment server communicates to the tentacles and deploys the changes when triggered" style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;" vertex="1" parent="WI4aho6z8Xlh3h6VnirR-1">
-          <mxGeometry x="920" y="540" width="278" height="60" as="geometry" />
+          <mxGeometry x="920" y="510" width="278" height="60" as="geometry" />
         </mxCell>
         <mxCell id="O7zRid36dls9oC1l155X-34" value="ASP.NET&lt;br&gt;app" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WI4aho6z8Xlh3h6VnirR-1">
           <mxGeometry x="764.5" y="645" width="55.5" height="30" as="geometry" />
@@ -638,6 +641,9 @@
         </mxCell>
         <mxCell id="6uLMOf0LNQOtZFtZwsxx-15" value="While performing switchovers the data layer has to be synched, if they are separate." style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;" vertex="1" parent="WI4aho6z8Xlh3h6VnirR-1">
           <mxGeometry x="1210" y="1109" width="278" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="g6i_k_dOTPDvQrE80LFu-0" value="Here in this solution its a classic blue green deployment, when the&amp;nbsp; pre-prod environment is all ready to switch, with latest code and all the data is synced up if they are not shared change the route 53 to point to the pre-prod.&amp;nbsp;&lt;br&gt;&lt;br&gt;In the target state the current pre-prod becomes prod and vice versa. All the code deployments will be pointed towards the pre-prod and Continuously deploy to the pre-prod and when ready sync the data part up and switch again.&amp;nbsp;" style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;" vertex="1" parent="WI4aho6z8Xlh3h6VnirR-1">
+          <mxGeometry x="-1" y="1721" width="442" height="159" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
