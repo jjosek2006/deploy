@@ -1,4 +1,4 @@
-<mxfile modified="2020-09-30T21:34:45.415Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="EYpOIWMLDG7TkuMuM013" version="13.7.7" type="github" pages="3">
+<mxfile modified="2020-09-30T21:40:21.426Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="nCtBDfnTWuikaY465zLm" version="13.7.7" type="github" pages="3">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Solution-1">
     <mxGraphModel dx="782" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -84,9 +84,6 @@
             <mxPoint x="540" y="350" as="sourcePoint" />
             <mxPoint x="590" y="300" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="VLLBcXMZJe62vzT6Zpj2-33" value="Octopus deployment server pulls the latest artefact and deploys them to the EC2&#39;s" style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;rotation=0;" vertex="1" parent="1">
-          <mxGeometry x="869" y="270" width="278" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VLLBcXMZJe62vzT6Zpj2-34" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D86613;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.instance2;" vertex="1" parent="1">
           <mxGeometry x="750" y="630" width="88" height="88" as="geometry" />
@@ -242,8 +239,11 @@
             <mxPoint x="220" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VLLBcXMZJe62vzT6Zpj2-80" value="Route53 holds the weighted records for both the load balancers. Load balancers here are to provide reverse proxy. Once the deployment happens the ASG for the old version can be reduced in the count for EC2&#39;s and those EC2&#39;s are untouched.&lt;br&gt;&amp;nbsp;&lt;br&gt;The inactive ASG can be made active with EC2&#39;s having latest artefacts deployed, route53 weight for the second load balancer can be slowly increased as the ASG&#39;s bring in new healthy nodes.&lt;br&gt;ELB health checks or route53 health checks can be utilized to determine the health of the new nodes, and making the weight for the second record to a 100 percent which completes the deployment.&lt;br&gt;&lt;br&gt;In the target state the current active ELB/ASG will become inactive and vice versa." style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="20" y="1130" width="442" height="230" as="geometry" />
+        <mxCell id="VLLBcXMZJe62vzT6Zpj2-80" value="Route53 holds the weighted records for both the load balancers. Load balancers here are to provide reverse proxy. Once the deployment happens the ASG for the old version can be reduced in the count for EC2&#39;s and those EC2&#39;s are untouched.&lt;br&gt;&amp;nbsp;&lt;br&gt;The inactive ASG can be made active with EC2&#39;s having latest artefacts deployed, route53 weight for the second load balancer can be slowly increased as the ASG&#39;s bring in new healthy nodes.&lt;br&gt;ELB health checks or route53 health checks can be utilized to determine the health of the new nodes, and making the weight for the second record to a 100 percent which completes the deployment.&lt;br&gt;&lt;br&gt;In the target state the current active ELB/ASG will become inactive and vice versa.&lt;br&gt;&amp;nbsp;&lt;br&gt;The method seems to provide a graceful change with no downtimes." style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1130" width="442" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="WgK7JA7BpT-tfextO6Dw-2" value="Octopus deployment server pulls the latest artefact and deploys them to the EC2&#39;s. Any method can be implemented from downloading and loading up the servers in the runtime to pre-baking/preparing deployable AIM&#39;s. ASG&#39;s/Launch configurations can be updated to prepare for the process or create new target groups and attaching them." style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="879" y="210" width="351" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -339,9 +339,6 @@
             <mxPoint x="540" y="350" as="sourcePoint" />
             <mxPoint x="590" y="300" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="O7zRid36dls9oC1l155X-20" value="Octopus deployment server pulls the latest artefact and deploys them to the EC2&#39;s" style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;rotation=0;" vertex="1" parent="WI4aho6z8Xlh3h6VnirR-1">
-          <mxGeometry x="869" y="270" width="278" height="50" as="geometry" />
         </mxCell>
         <mxCell id="O7zRid36dls9oC1l155X-21" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D86613;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.instance2;" vertex="1" parent="WI4aho6z8Xlh3h6VnirR-1">
           <mxGeometry x="750" y="630" width="88" height="88" as="geometry" />
@@ -639,6 +636,9 @@
         <mxCell id="g6i_k_dOTPDvQrE80LFu-0" value="Here in this solution its a classic blue green deployment, when the&amp;nbsp; pre-prod environment is all ready to switch, with latest code and all the data is synced up if they are not shared change the route 53 to point to the pre-prod.&amp;nbsp;&lt;br&gt;&lt;br&gt;In the target state the current pre-prod becomes prod and vice versa. All the code deployments will be pointed towards the pre-prod and Continuously deploy to the pre-prod and when ready sync the data part up and switch again.&amp;nbsp;" style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;" vertex="1" parent="WI4aho6z8Xlh3h6VnirR-1">
           <mxGeometry x="-1" y="1721" width="442" height="159" as="geometry" />
         </mxCell>
+        <mxCell id="MOU_LZy0bgvu7R7vwekg-0" value="Octopus deployment server pulls the latest artefact and deploys them to the EC2&#39;s. Any method can be implemented from downloading and loading up the servers in the runtime to pre-baking/preparing deployable AIM&#39;s. ASG&#39;s/Launch configurations can be updated to prepare for the process or create new target groups and attaching them." style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;rotation=0;" vertex="1" parent="WI4aho6z8Xlh3h6VnirR-1">
+          <mxGeometry x="869" y="200" width="351" height="120" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -728,8 +728,8 @@
             <mxPoint x="590" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lC8hKAcwFD_mJ59I7MVd-24" value="Octopus deployment server pulls the latest artefact and deploys them to the EC2&#39;s" style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;rotation=0;" vertex="1" parent="lC8hKAcwFD_mJ59I7MVd-1">
-          <mxGeometry x="869" y="270" width="278" height="50" as="geometry" />
+        <mxCell id="lC8hKAcwFD_mJ59I7MVd-24" value="Octopus deployment server pulls the latest artefact and deploys them to the EC2&#39;s. Any method can be implemented from downloading and loading up the servers in the runtime to pre-baking/preparing deployable AIM&#39;s. ASG&#39;s/Launch configurations can be updated to prepare for the process or create new target groups and attaching them." style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;rotation=0;" vertex="1" parent="lC8hKAcwFD_mJ59I7MVd-1">
+          <mxGeometry x="869" y="200" width="351" height="120" as="geometry" />
         </mxCell>
         <mxCell id="lC8hKAcwFD_mJ59I7MVd-25" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D86613;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.instance2;" vertex="1" parent="lC8hKAcwFD_mJ59I7MVd-1">
           <mxGeometry x="732" y="600" width="116.5" height="116.5" as="geometry" />
