@@ -1,4 +1,4 @@
-<mxfile modified="2020-09-30T21:25:37.311Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="wDTFnca0Q8Catf7KW19Q" version="13.7.7" type="github" pages="3">
+<mxfile modified="2020-09-30T21:34:45.415Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="EYpOIWMLDG7TkuMuM013" version="13.7.7" type="github" pages="3">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Solution-1">
     <mxGraphModel dx="782" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -831,8 +831,8 @@
             <mxPoint x="220" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lC8hKAcwFD_mJ59I7MVd-60" value="In this solution we are not using much of the infra components but rather another copy of the application itself within the same&amp;nbsp;" style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;" vertex="1" parent="lC8hKAcwFD_mJ59I7MVd-1">
-          <mxGeometry x="20" y="1130" width="442" height="230" as="geometry" />
+        <mxCell id="lC8hKAcwFD_mJ59I7MVd-60" value="In this solution we are not using much of the infra components but rather another copy of the application itself within the same EC2 host.&lt;br&gt;&lt;br&gt;When ready to switch the Octopus deploy can execute script on the remote server. The actual implementation could be anything ranging for switching the files/folder where the application files are stored to having another copy of the webserver running/switching when triggered.&lt;br&gt;&lt;br&gt;Though this method uses less AWS infra components there could be some draw backs and hence included in the last. Notably the below ones.&lt;br&gt;&lt;br&gt;- The shared resources in the servers if any such as ports or pipes, they could conflict if they are not released in time.&lt;br&gt;&lt;br&gt;-This may confuse the other integrations the application may have if they come up different identities / signatures.&lt;br&gt;&lt;br&gt;-Any licensable components /dependencies may experience issues.&lt;br&gt;&lt;br&gt;-Chances are there overtime some manual fixes/slack may come into existence.&amp;nbsp;" style="text;html=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=14;labelBackgroundColor=none;whiteSpace=wrap;" vertex="1" parent="lC8hKAcwFD_mJ59I7MVd-1">
+          <mxGeometry x="20" y="1130" width="442" height="370" as="geometry" />
         </mxCell>
         <mxCell id="mbZwtsax3kzWh92Zfzh7-0" value="ASP.NET&lt;br&gt;app - prod" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="lC8hKAcwFD_mJ59I7MVd-1">
           <mxGeometry x="750" y="620" width="70" height="30" as="geometry" />
